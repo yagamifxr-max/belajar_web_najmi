@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Tabel & Formulir CSS</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0f172a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th,
+    td {
+      border: 1px solid #cbd5e1;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      width: 400px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 95%;
+      padding: 8px;
+      border: 1px solid #94a3b8;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #16a34a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Daftar Ekstrakurikuler IT</h2>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Nama Ekskul</th>
+      <th>Hari Latihan</th>
+      <th>Ruangan</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Web Design &amp; Programming</td>
+      <td>Rabu</td>
+      <td>Lab RPL 1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Robotik &amp; IoT</td>
+      <td>Jumat</td>
+      <td>Lab Workshop</td>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
+  <h2>Formulir Pendaftaran Anggota Baru</h2>
+
+  <form>
+    <p>
+      <label>Nama Lengkap:</label><br>
+      <input type="text" placeholder="Masukkan nama lengkapmu..." required>
+    </p>
+
+    <p>
+      <label>Pilihan Ekskul:</label><br>
+      <select required>
+        <option>Web Design &amp; Programming</option>
+        <option>Robotik &amp; IoT</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Alasan Bergabung:</label><br>
+      <textarea rows="3" placeholder="Ceritakan singkat alasanmu..." required></textarea>
+    </p>
+
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+</body>
+</html>
