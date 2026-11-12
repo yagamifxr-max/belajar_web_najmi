@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Jurusan</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: #1a237e;
+        }
+
+        .wardah-kartu {
+            display: flex; 
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0% 20px;
+        }
+
+        .kartu {
+            flex: 1;
+            width: 100%;
+            max-width: 250px;
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 19px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            margin-bottom: 20px;
+        }
+
+        .kartu h3 {
+            color: #1a237e;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .wardah-kartu {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Kompetensi Keahlian</h2>
+
+    <div class="wardah-kartu">
+
+        <div class="kartu">
+            <h3>RPL</h3>
+            <p>Rekayasa Perangkat Lunak</p>
+        </div>
+
+        <div class="kartu">
+            <h3>TKJ</h3>
+            <p>Teknik Jaringan & Komputer</p>
+        </div>
+
+        <div class="kartu">
+            <h3>DKV</h3>
+            <p>Desain Komunikasi dan Visual</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
